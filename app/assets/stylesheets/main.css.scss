@@ -3,3 +3,50 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "bootstrap";
+
+
+.navbar-default {
+	background-color:#780d68;
+	border-bottom: 5px solid #510846;
+	height:100%;
+	padding:10px;
+	}
+
+.navbar-default .navbar-brand {
+	text-indent:-9999px;
+	display:block;
+	background:url('logo.png')0 0 no-repeat;
+	height:47px;
+	width:150px;
+	position:absolute;
+	left: 30%;
+	top:18%;
+}
+
+.navbar-toggle {
+	float:left!important;
+	background:rgba(140, 77, 0129, 0.6);
+	border:none;
+	margin:0;
+	height:50px;
+	width:50px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:#aa71a0!important;
+	border-radius:3px;
+	text-align:center;
+	width:100%;
+	margin-top:5x;
+	margin-bottom:5px;
+}
+
+.navbar-default .navbar-toggle .icon-bar:first-child {
+margin-top:5px;
+}
+
+.navbar-collapse .navbar-nav {
+	border:1px solid red;
+	position:absolute;
+	
+}
