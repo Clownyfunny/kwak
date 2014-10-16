@@ -41,10 +41,10 @@ angular.module('Kwak').factory('postData', ['$http', ($http) ->
       # Add new post to array of posts
       postData.data.posts.push(data)
       console.log('Successfully created post.')
-      $http.url('/')
 
     ).error( ->
       console.error('Failed to create new post.')
+      return false
     )
     return true
   return postData

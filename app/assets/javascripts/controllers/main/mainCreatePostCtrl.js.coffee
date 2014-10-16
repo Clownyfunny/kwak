@@ -11,7 +11,10 @@
     $location.url('/')
 
   $scope.createPost = ->
-    postData.createPost($scope.formData)
+    tampon=postData.createPost($scope.formData)
+    console.log(tampon)
+    if(tampon==true)
+      $location.url('/')
 
   $scope.clearPost = ->
     $scope.formData.newPostTitle = ''

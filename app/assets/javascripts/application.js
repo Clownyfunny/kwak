@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore/underscore
-//= require bootstrap/js/bootstrap
 //= require angular/angular
 //= require angular/angular-route
 //= require jquery/jquery.slides.min
+//= require bootstrap/bootstrap
