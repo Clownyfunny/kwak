@@ -17,17 +17,20 @@ Kwak = angular.module('Kwak', ['ngRoute'])
 #Sets up routing
 Kwak.config(['$routeProvider', ($routeProvider) ->
 
-	#Route for add post
-	$routeProvider.when('/post/new', { templateUrl: '../assets/mainCreatePost.html', controller: 'CreatePostCtrl' } )
+	#Route for create post
+	$routeProvider.when('/post/new', { templateUrl: '../assets/mainCreatePost.html.erb', controller: 'CreatePostCtrl' } )
 
 	#Route for category
-	$routeProvider.when('/category', { templateUrl: '../assets/mainCategory.html', controller: 'CategoryCtrl' } )
+	$routeProvider.when('/category', { templateUrl: '../assets/mainCategory.html.erb', controller: 'CategoryCtrl' } )
 
-	#Route for '/post'
-	$routeProvider.when('/post/:postId', { templateUrl: '../assets/mainPost.html', controller: 'PostCtrl' } )
+	#Route for view on post
+	$routeProvider.when('/post/:postId', { templateUrl: '../assets/mainPost.html.erb', controller: 'PostCtrl' } )
+
+	#Route for edit a post
+	$routeProvider.when('/post/edit/:postId', { templateUrl: '../assets/mainEditPost.html.erb', controller: 'EditPostController'})
 
 	#Default
-	$routeProvider.otherwise({ templateUrl: '../assets/mainIndex.html', controller : 'IndexCtrl' } )
+	$routeProvider.otherwise({ templateUrl: '../assets/mainIndex.html.erb', controller : 'IndexCtrl' } )
 
 ])
 

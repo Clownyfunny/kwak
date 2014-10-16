@@ -1,4 +1,4 @@
-@PostCtrl = ($scope, $routeParams, $location, $q, postData) ->
+@EditPostCtrl = ($scope, $routeParams, $location, $q, postData) ->
 
   $scope.data =
     postData: postData.data
@@ -13,7 +13,8 @@
 
   $scope.navHome = ->
     $location.url('/')
-
+  $scope.viewPost = (postId) ->
+    $location.url('/post/'+postId)
   # This will be run once the loadPosts successfully completes (or immediately
   # if data is already loaded)
   $scope.prepPostData = ->
@@ -28,8 +29,8 @@
   # Provide deferred promise chain to the loadPosts function
   postData.loadPosts(@deferred)
 
-  $scope.navEditPost = (postId) ->
-    $location.url('/post/edit/'+postId)
+  $scope.navEditPost = ->
+    $location.url('/post/edit')
 
 
-@PostCtrl.$inject = ['$scope', '$routeParams', '$location', '$q', 'postData']
+@EditPostCtrl.$inject = ['$scope', '$routeParams', '$location', '$q', 'postData']

@@ -1,7 +1,7 @@
 @IndexCtrl = ($scope, $location, $http, postData) ->
-
+	
   $scope.data = postData.data
-
+  console.log($scope)
   postData.loadPosts(null)
 
   $scope.viewPost = (postId) ->
