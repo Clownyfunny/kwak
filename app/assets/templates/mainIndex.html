@@ -1,6 +1,28 @@
-<div class="container" style="margin-top: 40px">
+<div class="container">
+    <div id="slides">
+      <img src="example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+    </div>
+
   <div class="row" ng-repeat="post in data.posts">
       <h2><a ng-click="viewPost(post.id)">{{ post.title }}</a></h2>
       <p>{{ post.description }}</p>
+
   </div>
 </div>
+
+        <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <script>
+
+    jQuery(function() {
+      jQuery('#slides').slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>

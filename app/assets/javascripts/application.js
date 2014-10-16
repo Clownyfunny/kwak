@@ -16,3 +16,4 @@
 //= require bootstrap/js/bootstrap
 //= require angular/angular
 //= require angular/angular-route
+//= require jquery/jquery.slides.min

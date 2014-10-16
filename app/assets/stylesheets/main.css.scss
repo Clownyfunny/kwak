@@ -1,52 +1,66 @@
-// Place all the styles related to the Main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*------------------------------------- SLIDER ----------------------*/
+body {
+  
+  #slides {
+        display: none
+      }
 
-@import "bootstrap";
+      /* Center the slideshow */
+      .container {
+        margin: 0 auto
+      }
+
+      /* Show active item in the pagination */
+      .slidesjs-pagination .active {
+        color:red;
+      }
+
+      /* Media quires for a responsive layout */
+
+      /* For tablets & smart phones */
+      @media (max-width: 767px) {
+        body {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .container {
+          width: auto;
+        }
+      }
+
+      /* For smartphones */
+      @media (max-width: 480px) {
+        .container {
+          width: auto
+        }
+      }
+
+      /* For smaller displays like laptops */
+      @media (min-width: 768px) and (max-width: 979px) {
+        .container {
+          width: 724px;
+
+          /* 
 
 
-.navbar-default {
-	background-color:#780d68;
-	border-bottom: 5px solid #510846;
-	height:100%;
-	padding:10px;
-	}
 
-.navbar-default .navbar-brand {
-	text-indent:-9999px;
-	display:block;
-	background:url('logo.png')0 0 no-repeat;
-	height:47px;
-	width:150px;
-	position:absolute;
-	left: 30%;
-	top:18%;
-}
 
-.navbar-toggle {
-	float:left!important;
-	background:rgba(140, 77, 0129, 0.6);
-	border:none;
-	margin:0;
-	height:50px;
-	width:50px;
-}
+          css header tablettes 
 
-.navbar-default .navbar-toggle .icon-bar {
-	background-color:#aa71a0!important;
-	border-radius:3px;
-	text-align:center;
-	width:100%;
-	margin-top:5x;
-	margin-bottom:5px;
-}
 
-.navbar-default .navbar-toggle .icon-bar:first-child {
-margin-top:5px;
-}
 
-.navbar-collapse .navbar-nav {
-	border:1px solid red;
-	position:absolute;
-	
+
+
+
+          */
+        }
+      }
+
+
+      /* For larger displays */
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px
+        }
+      }
 }
